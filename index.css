@@ -1,0 +1,27 @@
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 400px;
+      height: 400px;
+    margin: 0 auto;
+    background-color: #34495e;
+    border: 6px solid #2c3e50;
+    color: #fff;
+}
+  
+.fields {
+     border: 6px solid #2c3e50;
+     align-items: center;
+     font-family: Helvetica;
+     font-weight: bold;
+     font-size: 4em;
+     display: flex;
+     justify-content: center;
+     transition: transform 0.2s, background-color 0.2s;
+}
+  
+.fields:active {
+    /* Add the click effect styles */
+    background-color: #ccc;
+    transition: scale(.95);
+  }
